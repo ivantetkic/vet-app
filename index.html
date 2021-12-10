@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/site.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head">
+        <span class="material-icons small-display">menu</span>
+        <img class="logo" src="pictures/logo.png" alt="logo">          
+        <div class="login">
+            <a href="#" class="login-btn">
+                <span class="login-logo"></span>
+                <span>
+                    Login
+                </span>
+            </a>
+        </div>
+        <div class="search">  
+            <input type="text" class="search-input" placeholder="Pretraga">
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-small">
+            <div class="sidebar-services sidebar-icon">
+                <span class="material-icons">medical_services</span>
+            </div>
+            <div class="sidebar-medical sidebar-icon">
+                <span class="material-icons">local_pharmacy</span>
+            </div>
+            <div class="sidebar-contacts sidebar-icon">
+                <span class="material-icons">perm_contact_calendar</span>
+            </div>
+            <div class="sidebar-settings sidebar-icon">
+                <span class="material-icons">settings</span>
+            </div>
+        </div>
+        <div class="sidebar-big">
+            <div class="sidebar-services sidebar-icon">
+                <span class="material-icons">medical_services</span>
+                <div class="sidebar-names">Usluge</div>
+            </div>
+            <div class="sidebar-medical sidebar-icon">
+                <span class="material-icons">local_pharmacy</span>
+                <div class="sidebar-names">Apoteka</div>
+            </div>
+            <div class="sidebar-contacts sidebar-icon">
+                <span class="material-icons">perm_contact_calendar</span>
+                <div class="sidebar-names">Klijenti</div>
+            </div>
+            <div class="sidebar-settings sidebar-icon">
+                <span class="material-icons">settings</span>
+                <div class="sidebar-names">Podešavanja</div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <h1 class="page-title">Usluge</h1>
+        <div class="services">
+            <table  class="services-list">
+                <tr>
+                    <th>#</th>
+                    <th class="service-name">Naziv</th>
+                    <th>Cena</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Opšti klinički pregled</td>
+                    <td>1200 din</td>
+                    <td><span class="material-icons action-icons">delete</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Izlazak na teren</td>
+                    <td>2000 din</td>
+                    <td><span class="material-icons action-icons">delete</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Vakcinacija pasa</td>
+                    <td>2000 din</td>
+                    <td><span class="material-icons action-icons">delete</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Aplikacija leka</td>
+                    <td>1000 din</td>
+                    <td><span class="material-icons action-icons">delete</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Obeležavanje i izdavanje pasoša</td>
+                    <td>1300 din</td>
+                    <td><span class="material-icons action-icons">delete</span></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Vađenje krpelja</td>
+                    <td>500 din</td>
+                    <td><span class="material-icons action-icons">delete</span></td>
+                </tr>
+            </table>
+            
+            <div class="edit-service">
+                <div class="box">
+                    <div class="box-head">
+                        Dodaj / izmeni 
+                    </div>
+                    <hr>
+                    <div class="box-body">
+                        <form action="">
+                            <div class="form-input">
+                                <input name="Name" type="text" placeholder="Naziv">
+                            </div> 
+                            <div class="form-input">
+                                <input name="Price" type="number" min="0" step="0.1" placeholder="Cena">
+                            </div>
+                            <div class="form-input right">
+                                <input class="submit-btn" type="submit" value="Sačuvaj">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
