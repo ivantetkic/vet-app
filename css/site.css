@@ -52,25 +52,31 @@ body{
 }
 
 .head .search {
-    margin: 15px 40px;
+    margin: 15px 0 15px 40px;
     float: right;
 }
 
-input{
+input,textarea{
     width: 250px;
     height: 30px;
     min-width: 80px;
     border: 1px solid lightgray;
     border-radius: 10px;
-    padding: 5px 10px;
+    padding: 5px 20px;
     box-shadow: 0 0 5px lightgray;
 }
+textarea{
+    height: auto;
+    min-height: 45px;
+    padding: 15px 20px;
+}
 
-input:hover{
+
+input:hover,textarea:hover{
     box-shadow: 0 0 5px rgb(101, 152, 248);
 }
 
-input:focus-visible{
+input:focus-visible,textarea:focus-visible{
     border:1px solid lightgray;
     outline: none;
     box-shadow: 0 0 5px rgb(65, 62, 247);
@@ -90,7 +96,7 @@ input:focus-visible{
     display: inline-block;
 }
 .head .login a.login-btn{   
-    font-size: larger;
+    font-size: small;
     font-weight:bold;
     color: rgb(68, 68, 68);
    
@@ -105,28 +111,13 @@ input:focus-visible{
     display: block;
 }
 
-.head .small-display{
-    float: left;
-    display: none;
-    margin: 10px 40px;
-    font-size: 50px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.head .small-display:hover{
-    box-shadow: 0 0 5px #5f5f5fab;;
-    transition: 0.3s;
-}
-
-
-
 .main {
     text-align: center;
-    margin: 100px 0 0 200px; 
+    margin: 100px 0 20px 200px; 
 }
 .page-title{
     font-size: 35pt;
-    margin: 0;
+    margin: 10px 200px 30px 0;
 }
 
 .sidebar{
@@ -148,8 +139,8 @@ input:focus-visible{
 }
 .sidebar-icon{
     position:relative;
+    display: block;
     margin: 10px 0;
-    vertical-align: middle;
     border-radius: 5px;
 }
 .sidebar-icon:hover{
@@ -174,8 +165,9 @@ input:focus-visible{
 
 
 
+
 table {
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(252, 252, 252);
     box-shadow: 0 0 5px #5f5f5fab;
     border-radius: 10px;
     min-width: 320px;
@@ -192,12 +184,12 @@ table th,td{
 }
 
 table tr:not(:first-child):hover{
-    background-color: rgba(152, 156, 182, 0.479);
+    background-color: rgb(240, 240, 240);
     transition: 0.3s;
     cursor: pointer;
 }
 table,th {
-    
+    min-width: 75px;
     border-bottom: 3px solid gray;
     border-collapse: collapse;
     height: 40px;
@@ -209,14 +201,19 @@ tr:last-child td{
     border:none;
 }
 
+
 table .action-icons{
     cursor: pointer;
 }
+
 
 table .action-icons:hover{
     color: lightsalmon;
 }
 
+.services {
+    margin: 0 200px 0 0;
+}
 
 .services-list{
     vertical-align: middle;
@@ -234,7 +231,7 @@ table .action-icons:hover{
 }
 
 .box{
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     background-color: white;
     text-align: center;
@@ -244,6 +241,7 @@ table .action-icons:hover{
 .box .box-head{
     color: rgb(53, 53, 53);
     font-weight: bold;
+    font-size: 1.4em;
     padding: 10px;
 }
 
@@ -254,7 +252,12 @@ table .action-icons:hover{
 
 .form-input{
     display: block;
-    margin: 10px 0;
+    margin: 15px 10px;
+    width: 85%;
+}
+.form-input-btn{
+    width: auto;
+    
 }
 
 .submit-btn{
@@ -270,18 +273,112 @@ table .action-icons:hover{
 .right{
     text-align: right;
 }
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+
+.tasks{
+    text-align: left;
+}
+
+.task-item{
+    display: inline-block;
+    vertical-align: middle;
+    width: 160px;
+    height: 250px;
+    color: rgb(70, 69, 69);
+    cursor: pointer;
+    margin: 20px;
+}
+.task-item:hover{
+    box-shadow: 0 0 10px blue;
+}
+.task-item-name{
+    font-weight: bold;
+    font-size: 1.4em;
+    
+}
+.task-item-date{
+    font-size: 1.1em;
+}
+.task-item-time{
+    font-size: 1.3em;
+}
+
+.task-item-img img{
+    width: 150px;
+    height: 150px;
+}
+
+.form-group{
+    margin: 0 200px 0 0;
+    display: inline-block;
+}
+.input-search {
+    margin:10px;
+    padding: 0 20px;
+    text-align: left;
+    height: 45px;
+    min-width: 80px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 0 0 5px lightgray;
+    background-color: white;
+}
+
+.input-search:hover{
+    box-shadow: 0 0 5px rgb(101, 152, 248);
+}
 
 
-@media screen and (max-width : 750px){
+.input-search > input{
+    height: 45px;
+    width: 85%;
+    border-radius: 10px 2px 2px 10px;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+.input-search-magnify{
+   float: right;
+   font-size: 35px;
+   cursor: pointer;
+}
+
+.new-task-form {
+    min-width: 250px; 
+    width: 400px;
+    padding: 20px 20px;
+}
+
+.new-task-description{
+    margin: 10px;
+    width: 85%;
+}
+
+.new-task-date-label{
+    padding:10px 0 0 10px;
+    text-align: left;
+    font-weight: bold;
+    color: rgb(105, 104, 104);   
+}
+.new-task-date{
+    float: right;
+}
+
+
+.login-form {
+    min-width: 250px; 
+    width: 400px;
+    padding: 20px 20px;
+}
+
+@media screen and (max-width : 960px){
     .main {
-        margin: 100px 0 0 70px; 
-    }
-
-    .head .logo {
-        display: none;
-    }
-    .head .search {
-        float: left;
+        margin: 100px 70px 20px; 
     }
 
     .sidebar-big{
@@ -290,23 +387,45 @@ table .action-icons:hover{
     .sidebar-small{
         display: block;
     }
+    .sidebar-icon.sidebar-settings{
+        width: 50px;
+    }
+    .page-title{
+        margin: 10px 20px 30px 20px;
+    }
+    .form-group{
+        margin: 10px 20px 30px 20px;
+    }
+    .services{
+        margin: 10px 20px 30px 20px;
+    }
 
-
+    .tasks{
+        text-align: center;
+    }
 }
-@media screen and (max-width : 530px){
+@media screen and (max-width : 700px){
     .main {
         margin: 100px 0 0 0; 
     }
+    .head .logo {
+        display: none;
+    }
 
     .head .search {
-       display: none;
-    }
-    .head .small-display{
-        display: block;
+        float: left;
     }
 
-    .sidebar{
+    .sidebar-small{
         display: none;
+    }
+
+    
+    .sidebar:hover > .sidebar-big{
+        display: block;
+    }
+    .sidebar-icon.sidebar-settings{
+        width: 180px;
     }
 
     table {
@@ -315,5 +434,11 @@ table .action-icons:hover{
     table th.service-name{
         min-width: 0;
     }
-    
+  
+}
+
+@media screen and (max-width : 470px){
+    .head .search{
+        display: none;
+    }
 }

@@ -5,125 +5,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/site.css">
-    <title>Document</title>
+    <title>Početna</title>
 </head>
 <body>
     <div class="head">
-        <span class="material-icons small-display">menu</span>
-        <img class="logo" src="pictures/logo.png" alt="logo">          
+        <a class="logo-btn" href="index.html"><img class="logo" src="pictures/logo.png" alt="logo"></a>   
         <div class="login">
-            <a href="#" class="login-btn">
+            <a href="pages/login.html" class="login-btn">
                 <span class="login-logo"></span>
-                <span>
-                    Login
-                </span>
+                <span>Prijavi se</span>
             </a>
         </div>
         <div class="search">  
             <input type="text" class="search-input" placeholder="Pretraga">
         </div>
     </div>
+    
     <div class="sidebar">
-        <div class="sidebar-small">
-            <div class="sidebar-services sidebar-icon">
-                <span class="material-icons">medical_services</span>
-            </div>
-            <div class="sidebar-medical sidebar-icon">
-                <span class="material-icons">local_pharmacy</span>
-            </div>
-            <div class="sidebar-contacts sidebar-icon">
-                <span class="material-icons">perm_contact_calendar</span>
-            </div>
-            <div class="sidebar-settings sidebar-icon">
-                <span class="material-icons">settings</span>
-            </div>
-        </div>
         <div class="sidebar-big">
-            <div class="sidebar-services sidebar-icon">
+            <a class="sidebar-services sidebar-icon" href="index.html">
+                <span class="material-icons">home</span>
+                <div class="sidebar-names">Početna</div>
+            </a>
+            <a class="sidebar-services sidebar-icon" href="pages/services.html">
                 <span class="material-icons">medical_services</span>
                 <div class="sidebar-names">Usluge</div>
-            </div>
-            <div class="sidebar-medical sidebar-icon">
-                <span class="material-icons">local_pharmacy</span>
-                <div class="sidebar-names">Apoteka</div>
-            </div>
-            <div class="sidebar-contacts sidebar-icon">
+            </a>
+            <a class="sidebar-clients sidebar-icon" href="pages/clients.html">
                 <span class="material-icons">perm_contact_calendar</span>
                 <div class="sidebar-names">Klijenti</div>
-            </div>
-            <div class="sidebar-settings sidebar-icon">
+            </a>
+            <a class="sidebar-settings sidebar-icon" href="pages/settings.html">
                 <span class="material-icons">settings</span>
                 <div class="sidebar-names">Podešavanja</div>
-            </div>
+            </a>
         </div>
+        <div class="sidebar-small">
+            <a class="sidebar-services sidebar-icon" href="index.html">
+                <span class="material-icons">home</span>
+            </a>
+            <a class="sidebar-services sidebar-icon" href="pages/services.html">
+                <span class="material-icons">medical_services</span>
+            </a>
+            <a class="sidebar-clients sidebar-icon" href="pages/clients.html">
+                <span class="material-icons">perm_contact_calendar</span>
+            </a>
+            <a class="sidebar-settings sidebar-icon" href="pages/settings.html">
+                <span class="material-icons">settings</span>
+            </a>
+        </div>  
     </div>
+    
     <div class="main">
-        <h1 class="page-title">Usluge</h1>
-        <div class="services">
-            <table  class="services-list">
-                <tr>
-                    <th>#</th>
-                    <th class="service-name">Naziv</th>
-                    <th>Cena</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Opšti klinički pregled</td>
-                    <td>1200 din</td>
-                    <td><span class="material-icons action-icons">delete</span></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Izlazak na teren</td>
-                    <td>2000 din</td>
-                    <td><span class="material-icons action-icons">delete</span></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Vakcinacija pasa</td>
-                    <td>2000 din</td>
-                    <td><span class="material-icons action-icons">delete</span></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Aplikacija leka</td>
-                    <td>1000 din</td>
-                    <td><span class="material-icons action-icons">delete</span></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Obeležavanje i izdavanje pasoša</td>
-                    <td>1300 din</td>
-                    <td><span class="material-icons action-icons">delete</span></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Vađenje krpelja</td>
-                    <td>500 din</td>
-                    <td><span class="material-icons action-icons">delete</span></td>
-                </tr>
-            </table>
-            
-            <div class="edit-service">
-                <div class="box">
-                    <div class="box-head">
-                        Dodaj / izmeni 
-                    </div>
+        <h1 class="page-title">Zakazivanje pregleda</h1>
+        <div class="tasks">
+            <a id="task-item-0" class="task-item box" href="pages/new-task.html">
+                <div class="task-item-img">
+                    <img src="pictures/default-dog.png" alt="dog">
+                </div>
+                <div class="box-body">
+                    <div class="task-item-name">Zakaži novi pregled</div>
+                </div>
+            </a>
+            <div id="task-item-1" class="task-item box">
+                <div class="task-item-img">
+                    <img src="pictures/clients/dog 1.jpg" alt="dog">
+                </div>
+                <div class="box-body">
+                    <div class="task-item-name">Bubi</div>
                     <hr>
-                    <div class="box-body">
-                        <form action="">
-                            <div class="form-input">
-                                <input name="Name" type="text" placeholder="Naziv">
-                            </div> 
-                            <div class="form-input">
-                                <input name="Price" type="number" min="0" step="0.1" placeholder="Cena">
-                            </div>
-                            <div class="form-input right">
-                                <input class="submit-btn" type="submit" value="Sačuvaj">
-                            </div>
-                        </form>
-                    </div>
+                    <div class="task-item-date">16 Dec 2021</div>
+                    <div class="task-item-time">10:00</div>
+                </div>
+            </div>
+            <div id="task-item-2" class="task-item box">
+                <div class="task-item-img">
+                    <img src="pictures/clients/dog 2.jpg" alt="dog">
+                </div>
+                <div class="box-body">
+                    <div class="task-item-name">Floki</div>
+                    <hr>
+                    <div class="task-item-date">16 Dec 2021</div>
+                    <div class="task-item-time">14:00</div>
+                </div>
+            </div>
+            <div id="task-item-3" class="task-item box">
+                <div class="task-item-img">
+                    <img src="pictures/clients/cat 1.jpg" alt="dog">
+                </div>
+                <div class="box-body">
+                    <div class="task-item-name">Cica</div>
+                    <hr>
+                    <div class="task-item-date">16 Dec 2021</div>
+                    <div class="task-item-time">15:00</div>
+                </div>
+            </div>
+            <div id="task-item-4" class="task-item box">
+                <div class="task-item-img">
+                    <img src="pictures/clients/dog 3.jpg" alt="dog">
+                </div>
+                <div class="box-body">
+                    <div class="task-item-name">Astor</div>
+                    <hr>
+                    <div class="task-item-date">17 Dec 2021</div>
+                    <div class="task-item-time">09:00</div>
+                </div>
+            </div>
+            <div id="task-item-5" class="task-item box">
+                <div class="task-item-img">
+                    <img src="pictures/clients/cat 2.jpg" alt="dog">
+                </div>
+                <div class="box-body">
+                    <div class="task-item-name">Leo</div>
+                    <hr>
+                    <div class="task-item-date">17 Dec 2021</div>
+                    <div class="task-item-time">11:00</div>
+                </div>
+            </div>
+            <div id="task-item-6" class="task-item box">
+                <div class="task-item-img">
+                    <img src="pictures/clients/cat 3.jpg" alt="dog">
+                </div>
+                <div class="box-body">
+                    <div class="task-item-name">Tom</div>
+                    <hr>
+                    <div class="task-item-date">17 Dec 2021</div>
+                    <div class="task-item-time">13:00</div>
+                </div>
+            </div>
+            <div id="task-item-7" class="task-item box">
+                <div class="task-item-img">
+                    <img src="pictures/clients/dog 4.jpg" alt="dog">
+                </div>
+                <div class="box-body">
+                    <div class="task-item-name">Rex</div>
+                    <hr>
+                    <div class="task-item-date">18 Dec 2021</div>
+                    <div class="task-item-time">10:00</div>
                 </div>
             </div>
         </div>
