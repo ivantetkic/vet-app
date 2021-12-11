@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/site.css">
-    <title>Podešavanja</title>
+    <title>Novi task</title>
 </head>
 <body>
     <div class="head">
-        <a class="logo-btn" href="../index.html"><img class="logo" src="../pictures/logo.png" alt="logo"></a>     
+        <a class="logo-btn" href="../index.html"><img class="logo" src="../pictures/logo.png" alt="logo"></a>   
         <div class="login">
             <a href="login.html" class="login-btn">
                 <span class="login-logo"></span>
-                <span>Odjavi se</span>
+                <span>Prijavi se</span>
             </a>
         </div>
         <div class="search">  
@@ -57,8 +57,40 @@
     </div>
     
     <div class="main">
-        <h1 class="page-title main-body">Podešavanja</h1>
-        
+        <h1 class="page-title main-body">Novi klijent</h1>
+        <div class="form-group main-body box">
+            <form action="" class="new-client-form">
+                <div>
+                    <input class="form-input-inline" type="text" placeholder="Ime">
+                    <input class="form-input-inline" type="text" placeholder="Broj čipa">
+                </div>
+                <div>
+                    <input class="form-input-inline" type="text" placeholder="Ime vlasnika">
+                    <input class="form-input-inline" type="text" placeholder="Prezime vlasnika">
+                </div>
+                <div>
+                    <div class="form-inline">
+                        <input class="form-input" type="text" placeholder="Adresa">
+                        <input class="form-input" type="tel" placeholder="Telefon">
+                        <input class="form-input" type="email" placeholder="Email">
+                    </div>
+                    <div class="form-inline">
+                        <img class="new-client-img" src="../pictures//default-dog.png" alt="dog">
+                        <input class="form-input" type="file">
+                    </div> 
+                </div>
+                <div class="selects form-inline">
+                    <select name="client-type" id="client-type">
+                        <option>Izaberi vrstu</option>
+                        <option value="1">Pas</option>
+                        <option value="2">Mačka</option>
+                    </select>
+                </div>
+                <div class="form-input form-input-btn right">
+                    <input class="submit-btn" type="submit" value="Sačuvaj">
+                </div>
+            </form>
+        </div>
     </div>
     
 </body>
