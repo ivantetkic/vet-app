@@ -5,147 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="content/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="content/bootstrap-5.2.2-dist/css/bootstrap-grid.min.css">
     <title>Početna</title>
 </head>
 <body>
-    <div class="head">
-        <a class="logo-btn" href="index.html"><img class="logo" src="pictures/logo.png" alt="logo"></a>   
-        <div class="login">
-            <a href="pages/login.html" class="login-btn">
-                <span class="login-logo"></span>
-                <span>Prijavi se</span>
-            </a>
-        </div>
-        <div class="search">  
-            <input type="text" class="search-input" placeholder="Pretraga">
-        </div>
+    <div class="row head  align-items-center">
+            <a class="logo-btn col" href="index.html">
+                <img class="logo" src="pictures/logo.png" alt="logo">
+            </a>   
+            <div class="col"></div>
+            <div class="search col d-flex justify-content-end" >  
+                <input type="text" class="search-input " placeholder="Pretraga">
+            </div>
+
     </div>
     
-    <div class="sidebar">
-        <div class="sidebar-big">
-            <a class="sidebar-services sidebar-icon" href="index.html">
-                <span class="material-icons">home</span>
-                <div class="sidebar-names">Početna</div>
-            </a>
-            <a class="sidebar-services sidebar-icon" href="pages/services.html">
-                <span class="material-icons">medical_services</span>
-                <div class="sidebar-names">Usluge</div>
-            </a>
-            <a class="sidebar-clients sidebar-icon" href="pages/clients.html">
-                <span class="material-icons">perm_contact_calendar</span>
-                <div class="sidebar-names">Pacijenti</div>
-            </a>
-            <a class="sidebar-settings sidebar-icon" href="pages/settings.html">
-                <span class="material-icons">settings</span>
-                <div class="sidebar-names">Podešavanja</div>
-            </a>
-        </div>
-        <div class="sidebar-small">
-            <a class="sidebar-services sidebar-icon" href="index.html">
-                <span class="material-icons">home</span>
-            </a>
-            <a class="sidebar-services sidebar-icon" href="pages/services.html">
-                <span class="material-icons">medical_services</span>
-            </a>
-            <a class="sidebar-clients sidebar-icon" href="pages/clients.html">
-                <span class="material-icons">perm_contact_calendar</span>
-            </a>
-            <a class="sidebar-settings sidebar-icon" href="pages/settings.html">
-                <span class="material-icons">settings</span>
-            </a>
-        </div>  
+    
+    <div class="main-index p-4 justify-content-center">
+            <div class="row">
+                <h1 class="page-title-index col">Upoznaj <span class="color-text-1">VET,</span>
+                    <div class="h1 mt-3">program za veterinarske ambulante.</div>
+                </h1>
+            </div>
+            <div class="row justify-content-center pb-4">
+                <img class="col-lg-8" src="pictures/sve-u-jednom.png" alt="">
+            </div>
+            <div class="row justify-content-center pb-2">
+                <div class="col-md-7 h1">
+                    Možeš da postigneš mnogo <span class="color-text-1">više</span> sa mnogo <span class="color-text-2">manje</span> truda
+                </div>
+            </div>
+            <div class="row justify-content-center pb-4">
+                <div class="col h5">
+                    VET je sveobuhvatna platforma u oblaku koja vam omogućava vođenje cele prakse s jednim alatom. 
+                    Mi smo vaš partner od poverenja za povećanje angažmana pacijenata, pojednostavljenje vaših procesa i razvoj vaše prakse.
+                </div>
+            </div>
+            <div class="row align-items-center pb-4 justify-content-center">
+                <img class="col-md-7 col-lg-5" src="pictures/grow-practice.png" alt="">
+                
+                <div class="col-md-5 col-lg-7">
+                    <div class="h1">
+                        Razvijte svoju praksu 10 puta brže uz <span class="color-text-1">VET</span>
+                    </div>
+                    <div class="h3 justify-text">
+                        Kako razvijate svoju praksu kada nemate kapaciteta za nove klijente?
+                        VET se automatski brine za sve što vam je potrebno za rad vaše prakse. 
+                        Prepolovite vreme poseta, shvatite i rešite uska grla i otključajte nove izvore prihoda.
+                    </div>
+                </div>       
+            </div>
+            <div class="row align-items-center pb-4 justify-content-center">
+            
+                <div class="col-md-5 col-lg-7 ">
+                    <div class="h1">
+                        <span class="color-text-1">Neguj</span> odnos i održavaj kontakt sa vlasnicima <span class="color-text-2">ljubimaca</span>
+                    </div>
+                    <div class="h3 justify-text">Više vam ne trebaju višestruki nepovezani alati. Celo lečenje pacijenta činimo lakšim i bržim - za vas i vaše pacijente. Zadržite svoje klijente pružajući im moderno iskustvo pre, tokom i nakon posete.</div>
+                </div>  
+                <img class="col-md-7 col-lg-5" src="pictures/nurture-relationships.png" alt="">    
+            </div>
     </div>
     
-    <div class="main">
-        <h1 class="page-title main-body">Zakazаni pregledi</h1>
-        <div class="tasks">
-            <a id="box-item-0" class="box-item box" href="pages/new-task.html">
-                <div class="box-item-img">
-                    <img src="pictures/default-dog.png" alt="dog">
-                </div>
-                <div class="box-body">
-                    <div class="box-item-name">Zakaži novi pregled</div>
-                </div>
-            </a>
-            <div id="box-item-1" class="box-item box">
-                <div class="box-item-img">
-                    <img src="pictures/clients/dog 1.jpg" alt="dog">
-                </div>
-                <div class="box-body">
-                    <div class="box-item-name">Bubi</div>
-                    <hr>
-                    <div class="box-item-date">16 Dec 2021</div>
-                    <div class="box-item-time">10:00</div>
-                </div>
-            </div>
-            <div id="box-item-2" class="box-item box">
-                <div class="box-item-img">
-                    <img src="pictures/clients/dog 2.jpg" alt="dog">
-                </div>
-                <div class="box-body">
-                    <div class="box-item-name">Floki</div>
-                    <hr>
-                    <div class="box-item-date">16 Dec 2021</div>
-                    <div class="box-item-time">14:00</div>
-                </div>
-            </div>
-            <div id="box-item-3" class="box-item box">
-                <div class="box-item-img">
-                    <img src="pictures/clients/cat 1.jpg" alt="dog">
-                </div>
-                <div class="box-body">
-                    <div class="box-item-name">Cica</div>
-                    <hr>
-                    <div class="box-item-date">16 Dec 2021</div>
-                    <div class="box-item-time">15:00</div>
-                </div>
-            </div>
-            <div id="box-item-4" class="box-item box">
-                <div class="box-item-img">
-                    <img src="pictures/clients/dog 3.jpg" alt="dog">
-                </div>
-                <div class="box-body">
-                    <div class="box-item-name">Astor</div>
-                    <hr>
-                    <div class="box-item-date">17 Dec 2021</div>
-                    <div class="box-item-time">09:00</div>
-                </div>
-            </div>
-            <div id="box-item-5" class="box-item box">
-                <div class="box-item-img">
-                    <img src="pictures/clients/cat 2.jpg" alt="dog">
-                </div>
-                <div class="box-body">
-                    <div class="box-item-name">Leo</div>
-                    <hr>
-                    <div class="box-item-date">17 Dec 2021</div>
-                    <div class="box-item-time">11:00</div>
-                </div>
-            </div>
-            <div id="box-item-6" class="box-item box">
-                <div class="box-item-img">
-                    <img src="pictures/clients/cat 3.jpg" alt="dog">
-                </div>
-                <div class="box-body">
-                    <div class="box-item-name">Tom</div>
-                    <hr>
-                    <div class="box-item-date">17 Dec 2021</div>
-                    <div class="box-item-time">13:00</div>
-                </div>
-            </div>
-            <div id="box-item-7" class="box-item box">
-                <div class="box-item-img">
-                    <img src="pictures/clients/dog 4.jpg" alt="dog">
-                </div>
-                <div class="box-body">
-                    <div class="box-item-name">Rex</div>
-                    <hr>
-                    <div class="box-item-date">18 Dec 2021</div>
-                    <div class="box-item-time">10:00</div>
-                </div>
-            </div>
+
+    <div class="social-wraper">
+        <div class="social" >
+            <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="nofollow" title="Facebook">
+                <img class="social-img" src="pictures/social/facebook.png" alt="facebook">
+            </a>   
+            <a class="social-link" href="https://www.twitter.com/" target="_blank" rel="nofollow" title="Twitter">
+                <img class="social-img" src="pictures/social/twitter.png" alt="twitter">
+            </a>  
+            <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="nofollow" title="Instagram">
+                <img class="social-img" src="pictures/social/instagram.png" alt="instagram">
+            </a>  
         </div>
     </div>
-    
+
+
+    <div class="footer small align-center">
+        Copyright ©2022 by Ivan Tetkić. Sva prava su zadržana.
+    </div>
 </body>
 </html>
