@@ -503,9 +503,9 @@ table .action-icons:hover{
     .main {
         margin: 100px 0 0 0; 
     }
-    .head .logo {
+    /* .head .logo {
         display: none;
-    }
+    } */
 
     .head .search {
         float: left;
