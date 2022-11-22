@@ -476,6 +476,12 @@ table .action-icons:hover{
     background-color: #000;
   }
 
+  a.decoration-none {
+    text-decoration: none;
+    
+  }
+
+
 @media screen and (max-width : 960px){
     .main {
         margin: 100px 70px 20px; 
