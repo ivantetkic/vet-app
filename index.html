@@ -14,14 +14,17 @@
     <title>VET | Program za veterinarske ambulante </title>
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="8WMBIpFg"></script>
+
     <div class="row head  align-items-center d-none d-sm-flex">
-            <a class="logo-btn col" href="index.html">
-                <img class="logo" src="pictures/logo.png" alt="logo">
-            </a>   
-            <div class="col"></div>
-            <div class="search col d-flex justify-content-end" >  
-                <input type="text" class="search-input " placeholder="Pretraga">
-            </div>
+        <a class="logo-btn col" href="index.html">
+            <img class="logo" src="pictures/logo.png" alt="logo">
+        </a>   
+        <div class="col"></div>
+        <div class="search col d-flex justify-content-end" >  
+            <input type="text" class="search-input " placeholder="Pretraga">
+        </div>
     </div>
     
     
@@ -86,7 +89,17 @@
 
 
     <div class="footer small align-center">
-        Copyright ©2022 by Ivan Tetkić. Sva prava su zadržana.
+        <div>
+            <div class="fb-like" 
+                data-href="https://developers.facebook.com/docs/plugins/" 
+                data-width="" 
+                data-layout="button" 
+                data-action="like" 
+                data-size="small" 
+                data-share="true">
+            </div>
+        </div>
+        <span>Copyright ©2022. Sva prava su zadržana.</span>    
     </div>
 </body>
 </html>
